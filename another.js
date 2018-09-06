@@ -1,1 +1,1 @@
-Testing from java service
+test

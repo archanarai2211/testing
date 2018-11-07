@@ -1,0 +1,5 @@
+{
+	"functionName": "ajname1",
+	"runtime": "Node.js 6.10",
+	"handler": "ajname1.handler"
+}

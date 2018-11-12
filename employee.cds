@@ -1,17 +1,15 @@
-context RefinishPortalSalesOrders {	
+context empDetailsModel {	
 		
-	entity SalesOrder{
-		key SalesOrderID: String(10);
-		CustomerID: String(10);
-		SalesOrderDate: DateTime;
-		CustomerOrderNumber: String(10);
-		SalesOrderStatus: String(25);
-	
-	}	
-
+	entity EmpDetails {
+		key EmpID: String(10);
+		Name: String(255);
+		Location: String(255);
+		EquipmentNumber: Integer;
+		Hobbies: String(255);
+	}
 	
 };
 
-service SalesOrderService {
-	entity SalesOrders as projection on RefinishPortalSalesOrders.SalesOrder;
+service empDetails {
+	entity EmpDetails as projection on empDetailsModel.EmpDetails;
 };
